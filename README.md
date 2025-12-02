@@ -11,7 +11,7 @@
 ## How to use:
 
 1. Initialize the API by doing ``` local InverseKinematics = require("InverseKinematics") ```
-2. Then create a new armature system by running ``` local armatureSystem = InverseKinematics:newArmatureSystem(pos,size,armatureLength) ``` where pos(Vector3), size(Integer) how many armatures are going to be in the system, armatureLength(Number) length of the each armature
+2. Then create a new armature system by running ``` local armatureSystem = InverseKinematics:newArmatureSystemOfSize(pos,size,armatureLength) ``` where pos(Vector3), size(Integer) how many armatures are going to be in the system, armatureLength(Number) length of the each armature
 ## Methods:
 ### Armature System Methods:
 * Create new armature system
@@ -19,11 +19,11 @@
     -- pos(Vector3)
     -- size(Integer)
     -- armatureLength(number)
-    InverseKinematics:newArmatureSystem(pos,size,armatureLength) 
+    InverseKinematics:newArmatureSystemOfSize(pos,size,armatureLength) 
 
     -- pos(Vector3)
     -- armatureLengths(table of number)
-    InverseKinematics:newArmatureSystem(pos,size,armatureLength) 
+    InverseKinematics:newArmatureSystemOfLengths(pos,size,armatureLength) 
 ```
 * Do a two step update proccess for the chain where the chain tries to reach the target in the most believable way possible
 ``` 
