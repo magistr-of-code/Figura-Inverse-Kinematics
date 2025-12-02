@@ -109,7 +109,7 @@ armatureSystem.__index = armatureSystem
 ---@param size integer
 ---@param armatureLength number
 ---@return self
-function armatureSystem:newArmatureSystem(root, size,armatureLength)
+function armatureSystem:newArmatureSystemOfSize(root, size,armatureLength)
     local instance = setmetatable({}, self)
 
     instance.armatures = {armature:newArmature(root:copy(),root:copy():add(0,armatureLength,0))}
@@ -128,7 +128,7 @@ end
 ---@param root Vector3
 ---@param armatureLengths table
 ---@return self
-function armatureSystem:newArmatureSystem(root,armatureLengths)
+function armatureSystem:newArmatureSystemOfLengths(root,armatureLengths)
     local instance = setmetatable({}, self)
 
     instance.armatures = {armature:newArmature(root:copy(),root:copy():add(0,armatureLengths[1],0))}
