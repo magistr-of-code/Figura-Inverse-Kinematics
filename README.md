@@ -23,7 +23,7 @@
 
     -- pos(Vector3)
     -- armatureLengths(table of number)
-    InverseKinematics:newArmatureSystemOfLengths(pos,size,armatureLength) 
+    InverseKinematics:newArmatureSystemOfLengths(pos,armatureLengths) 
 ```
 * Do a two step update proccess for the chain where the chain tries to reach the target in the most believable way possible
 ``` 
